@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: auto_park_db
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: "auto_park"
+      POSTGRES_USER: "db_user"
+      POSTGRES_PASSWORD: "db_password"

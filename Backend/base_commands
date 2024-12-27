@@ -1,0 +1,12 @@
+uv add module_name
+
+uv run fastapi dev
+
+All packages must be installed in venv
+
+python -m alembic init -t async app/infrastructure/db/migrations
+
+python -m alembic revision --autogenerate -m "Initial revision"
+
+python -m alembic upgrade head
+python -m alembic downgrade
