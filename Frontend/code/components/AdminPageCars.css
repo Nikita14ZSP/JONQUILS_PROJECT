@@ -1,0 +1,150 @@
+/* Общий фон */
+.admin-page-fixes {
+    background: linear-gradient(to right, #FFA500, #FF7F50); /* Оранжевый градиент */
+    color: #333;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Сообщения */
+  .message {
+    background-color: #FFEB3B;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Разделы */
+  section {
+    margin: 20px 0;
+  }
+  
+  .form-inline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .form-inline input {
+    padding: 5px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-inline button {
+    padding: 10px;
+    background-color: #FF7F50; /* Персиковый цвет */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-inline button:hover {
+    background-color: #28a745; /* Зеленый при наведении */
+  }
+  
+  /* Новый ремонт */
+  .new-fix-section .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .new-fix-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .new-fix-section button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .new-fix-section button:hover {
+    background-color: #28a745;
+  }
+  
+  /* Список ремонтов */
+  .fixes-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .fix-card {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fix-card h3 {
+    font-size: 1.5rem;
+    color: #FF7F50;
+  }
+  
+  .fix-card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .fix-card button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .fix-card button:hover {
+    background-color: #28a745;
+  }
+  
+  /* Детали ремонта */
+  .selected-fix-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .selected-fix-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .selected-fix-details li {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .selected-fix-details strong {
+    color: #FF7F50;
+  }
+  

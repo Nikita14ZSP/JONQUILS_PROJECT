@@ -1,0 +1,139 @@
+/* AdminPageRides.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e1f5fe;
+}
+
+.admin-page-rides {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #ff7043;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.message {
+  color: #f44336;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.new-ride-section,
+.rides-list-section,
+.update-ride-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center; /* Центрирование всех элементов */
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+input {
+  width: 100%; /* Занимает всю ширину ячейки */
+  max-width: 350px; /* Ограничиваем максимальную ширину */
+  padding: 10px;
+  border: 1px solid #b3e5fc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #ff7043;
+  outline: none;
+}
+
+button {
+  background-color: #ffab91; /* Персиковый цвет */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f4511e;
+  transform: scale(1.05);
+}
+
+.rides-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ride-card {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ride-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ride-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.ride-actions button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ride-actions button:hover {
+  background-color: #388e3c;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ride-actions {
+    flex-direction: column;
+  }
+}
+
+
